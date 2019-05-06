@@ -1,2 +1,2 @@
 # diffie-hellman-js
-Javascript Diffie Hellman 
+Javascript Diffie-Hellman key exchange
