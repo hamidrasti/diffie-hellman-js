@@ -1,0 +1,29 @@
+{
+  "name": "diffie-hellman-js",
+  "version": "1.0.0",
+  "description": "Javascript Diffie Hellman",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamraa/diffie-hellman-js.git"
+  },
+  "keywords": [
+    "diffie-hellman",
+    "diffiehellman",
+    "diffie",
+    "hellman",
+    "js",
+    "dh",
+    "key",
+    "exchange"
+  ],
+  "author": "hamraa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hamraa/diffie-hellman-js/issues"
+  },
+  "homepage": "https://github.com/hamraa/diffie-hellman-js#readme"
+}
