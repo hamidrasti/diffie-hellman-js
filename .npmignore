@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+node_modules/
+art/
+sample/
+npm-debug.log
+yarn.lock
+yarn-error.log
+.travis.yml
+README.md
+.babelrc
+babelrc
+test/
