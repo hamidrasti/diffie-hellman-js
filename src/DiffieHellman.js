@@ -232,7 +232,8 @@ class DiffieHellman {
      */
     getPrivateKey(format = DiffieHellman.Constants.FORMAT_NUMBER) {
         if (!this.hasPrivateKey()) {
-            this.setPrivateKey(this.generatePrivateKey(), DiffieHellman.Constants.FORMAT_BINARY);
+            // this.setPrivateKey(this.generatePrivateKey(), DiffieHellman.Constants.FORMAT_BINARY);
+            this.setPrivateKey(this.generatePrivateKey());
         }
         return this.convert(this.privateKey, DiffieHellman.Constants.FORMAT_NUMBER, format);
     }
@@ -276,9 +277,11 @@ class DiffieHellman {
         // convert to output format
         switch (outputFormat) {
             case DiffieHellman.Constants.FORMAT_BINARY:
-            //return $this->math->intToBin(number);
+                // return $this->math->intToBin(number);
+                return BigInt(number).toString(2);
             case DiffieHellman.Constants.FORMAT_BTWOC:
-            //return $this->math->intToBin(number, true);
+                // return $this->math->intToBin(number, true);
+                return BigInt(number).toString(2);
             case DiffieHellman.Constants.FORMAT_NUMBER:
             default:
                 return number;
@@ -295,6 +298,7 @@ class DiffieHellman {
      * @returns {string}
      */
     generatePrivateKey() {
+        // todo use random_bytes to generate binary private key
         return BigInt.randBetween(`1e${this.prime.length - 1}`, `1e${this.prime.length}`).toString();
     }
 
