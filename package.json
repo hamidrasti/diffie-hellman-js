@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/hamraa/diffie-hellman-js/issues"
   },
-  "homepage": "https://github.com/hamraa/diffie-hellman-js#readme"
+  "homepage": "https://github.com/hamraa/diffie-hellman-js#readme",
+  "dependencies": {
+    "big-integer": "^1.6.43"
+  }
 }
