@@ -265,7 +265,6 @@ class DiffieHellman {
         switch (inputFormat) {
             case DiffieHellman.Constants.FORMAT_BINARY:
             case DiffieHellman.Constants.FORMAT_BTWOC:
-                // number = $this->math->binToInt(number);
                 number = BigInt(number, 2).toString(10);
                 break;
             case DiffieHellman.Constants.FORMAT_NUMBER:
@@ -277,10 +276,8 @@ class DiffieHellman {
         // convert to output format
         switch (outputFormat) {
             case DiffieHellman.Constants.FORMAT_BINARY:
-                // return $this->math->intToBin(number);
                 return BigInt(number).toString(2);
             case DiffieHellman.Constants.FORMAT_BTWOC:
-                // return $this->math->intToBin(number, true);
                 return BigInt(number).toString(2);
             case DiffieHellman.Constants.FORMAT_NUMBER:
             default:
@@ -298,7 +295,7 @@ class DiffieHellman {
      * @returns {string}
      */
     generatePrivateKey() {
-        // todo use random_bytes to generate binary private key
+        // todo use native random_bytes to generate binary private key
         return BigInt.randBetween(`1e${this.prime.length - 1}`, `1e${this.prime.length}`).toString();
     }
 
