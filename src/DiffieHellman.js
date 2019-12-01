@@ -300,4 +300,4 @@ class DiffieHellman {
 
 }
 
-export default DiffieHellman;
+export { DiffieHellman };
