@@ -24,7 +24,7 @@ export const random = (min, max) => {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min + 1;
-},
+};
 
 export const randomBigInt = (length = 448) => {
   let num = '';
