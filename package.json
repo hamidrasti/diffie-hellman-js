@@ -26,5 +26,8 @@
     "url": "https://github.com/hamraa/diffie-hellman-js/issues"
   },
   "homepage": "https://github.com/hamraa/diffie-hellman-js#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
