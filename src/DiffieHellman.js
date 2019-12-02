@@ -257,7 +257,7 @@ class DiffieHellman {
   convert(number, inputFormat = DiffieHellman.Constants.FORMAT_NUMBER, outputFormat = DiffieHellman.Constants.FORMAT_BINARY) {
 
     if (inputFormat === outputFormat) {
-      return number;
+      return BigInt(number).toString();
     }
 
     // convert to number
